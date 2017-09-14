@@ -1,24 +1,13 @@
 # README
+This application is a project from The Odin Project/Ruby on Rails study.
+It can be found here:  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-advanced-forms
 
-Things you may want to cover:
+The point of this project is to create a one way flight booker application to practice populating and building dropdown menus, radio buttons, and nested submissions.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The flow of this application:
+User enters desired dates and airports to search for flights.
+Chooses from a list of eligible flights.
+Enters passenger(s) information.
+Enters billing information.
