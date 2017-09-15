@@ -1,1 +1,12 @@
-Hello from the flights index page!
+<h1>Search for flights</h1>
+<%= form_tag(root_url, method: "get") do %>
+<%= label_tag(:from_code, "Departing Airport:") %><br>
+<%= select_tag(:from_code, options_for_select(@airport_options)) %><br>
+<%= label_tag(:to_code, "Arriving Airport:") %><br>
+<%= select_tag(:to_code, options_for_select(@airport_options)) %><br>
+<%= label_tag(:date, "Date:") %><br>
+<%= select_tag "date", options_from_collection_for_select(Flight.get_starts, 'start', :start_formatted) %><br>
+<%= label_tag(:num_tickets, "Passengers") %><br>
+<%= select_tag "num_tickets", "<option>1</option><option>2</option><option>3</option><option>4</option>".html_safe %><br>
+<%= submit_tag("Find Flights") %>
+<% end %>
