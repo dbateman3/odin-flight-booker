@@ -11,7 +11,8 @@
 <%= submit_tag("Find Flights") %>
 <% end %>
 
-<%= @from_code %>
-<%= @to_code %>
-<%= @date %>
-<%= @num_tickets %>
+<% if @from_code != nil %>
+<%= render 'shared/flight_results' %>
+<% end %>
+
+

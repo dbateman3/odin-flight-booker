@@ -1,0 +1,11 @@
+<h1>Flight Results</h1>
+<%= @from_code %>
+<%= @to_code %>
+<%= @date %>
+<%= @num_tickets %>
+
+
+<%= form_tag(root_url, method: "get") do %>
+
+<%= submit_tag("Book flight") %>
+<% end %>
