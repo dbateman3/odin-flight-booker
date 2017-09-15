@@ -18,3 +18,11 @@ Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), star
 Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
 Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
 Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
+Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
+Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
+Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
+Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
+Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
+Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
+
+
