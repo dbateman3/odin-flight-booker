@@ -1,8 +1,18 @@
 <h1>Flight Results</h1>
-<%= @from_code %>
-<%= @to_code %>
-<%= @date %>
-<%= @num_tickets %>
+<table>
+	<tr>
+		<th>Departing airport</th>
+		<th>Arriving airport</th>
+		<th>Date</th>
+		<th>Passengers</th>
+	</tr>
+	<tr>
+		<td><%= @from_code %></td>
+		<td><%= @to_code %></td>
+		<td><%= @date %></td>
+		<td><%= @num_tickets %></td>
+	</tr>
+</table>
 
 
 <%= form_tag(root_url, method: "get") do %>
