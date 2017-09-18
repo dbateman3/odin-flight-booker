@@ -12,6 +12,7 @@ Airport.create(airport_code: 'JFK')
 Airport.create(airport_code: 'CLE')
 Airport.create(airport_code: 'MYR')
 
+Flight.create(from_airport_id: 1, to_airport_id: 2, start: Time.now, flight_duration: 30)
 Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
 Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
 Flight.create(from_airport_id: (rand(5) + 1), to_airport_id: (rand(5) + 1), start: Time.now + rand(2592000), flight_duration: (rand(220) + 30))
