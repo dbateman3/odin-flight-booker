@@ -19,14 +19,22 @@
 <% if @results %>
 	<%= form_tag(root_url, method: "get") do %>
 		<%= hidden_field_tag(:num_tickets, @num_tickets) %>
-		<%= collection_radio_buttons(:flight, :flight_id, @results, :id, :start_formatted) do |b| %>
-			<tr>
-				<td><%= b.radio_button %></td>
-				<td><%= b.object.from_airport.airport_code %></td>
-				<td><%= b.object.to_airport.airport_code %></td>
-				<td><%= b.object.start_formatted %></td>
-			</tr>
-		<% end %><br>
+		<table>
+			<th></th>
+			<th>Departing</th>
+			<th>Arriving</th>
+			<th>Date</th>
+			<th>Duration</th>
+			<%= collection_radio_buttons(:flight, :flight_id, @results, :id, :start_formatted) do |b| %>
+				<tr>
+					<td><%= b.radio_button %></td>
+					<td><%= b.object.from_airport.airport_code %></td>
+					<td><%= b.object.to_airport.airport_code %></td>
+					<td><%= b.object.start_formatted %></td>
+					<td><%= b.object.flight_duration %> Minutes</td>
+				</tr>
+			<% end %><br>
+		</table>
 	<%= submit_tag("Book flight") %>
 	<% end %>
 <% else %>
