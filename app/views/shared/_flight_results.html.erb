@@ -18,7 +18,7 @@
 
 
 <% if @results %>
-	<%= form_tag(root_url, method: "get") do %>
+	<%= form_tag("bookings/new", method: "get") do %>
 		<%= hidden_field_tag(:num_tickets, @num_tickets) %>
 		<table>
 			<th></th>
