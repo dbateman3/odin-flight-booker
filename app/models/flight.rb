@@ -2,6 +2,7 @@ class Flight < ApplicationRecord
 	validates :start, uniqueness: true
 	belongs_to :from_airport, :class_name => "Airport"
 	belongs_to :to_airport, :class_name => "Airport"
+	has_many :bookings
 
 	def self.flight_results(from_code, to_code)
 		self.where(from_airport_id: from_code, to_airport_id: to_code)
