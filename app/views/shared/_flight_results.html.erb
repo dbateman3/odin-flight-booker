@@ -1,9 +1,10 @@
 <h1>Flight Results</h1>
+<h3>Your selection:</h3>
 <table>
 	<tr>
 		<th>Departing airport</th>
 		<th>Arriving airport</th>
-		<th>Date</th>
+		<th>Date/Time</th>
 		<th>Passengers</th>
 	</tr>
 	<tr>
@@ -13,7 +14,7 @@
 		<td><%= @num_tickets %></td>
 	</tr>
 </table>
-
+<h3>Results</h3>
 
 
 <% if @results %>
@@ -23,14 +24,14 @@
 			<th></th>
 			<th>Departing</th>
 			<th>Arriving</th>
-			<th>Date</th>
+			<th>Date/Time</th>
 			<th>Duration</th>
 			<%= collection_radio_buttons(:flight, :flight_id, @results, :id, :start_formatted) do |b| %>
 				<tr>
 					<td><%= b.radio_button %></td>
 					<td><%= b.object.from_airport.airport_code %></td>
 					<td><%= b.object.to_airport.airport_code %></td>
-					<td><%= b.object.start_formatted %></td>
+					<td><%= b.object.start %></td>
 					<td><%= b.object.flight_duration %> Minutes</td>
 				</tr>
 			<% end %><br>
